@@ -130,3 +130,17 @@ evolution(24, pop_size,0.05,0.7, pop_size/2,100)
 | pop_red   | 50       | 14777.14 | 17749.84  | 16132.9985 | 787.088712 | 60.5746  |
 | pop_green | 100      | 12820.79 | 16416.100 | 14634.7530 | 999.26815  | 55.8320  |
 | pop_blue  | 200      | 12325.93 | 15235.63  | 13748.163  | 954.26920  | 67.75002 |
+
+
+
+![image](https://user-images.githubusercontent.com/61973661/149372463-63691e1b-fbef-44ff-a57b-71d7b0e461f0.png)
+
+
+From the graph above we can see the average fitness of the best individual across the 20 runs. I
+believe the optimal size for the population is over a 100. The red graph represents a population of 50
+individuals. I am not sure why the fitness value grew after the 95 generation. Perhaps the small
+population size gave a smaller pool of selected parents which in turn lowered the diversity. The blue
+and green represents populations of 100 and 200. Their path to the best fitness is almost identical in
+the first 40 generations. Both flatten off after the 60 generation.
+
+I believe the best configurations based on this data is a population of 150 running for 85 generations 
