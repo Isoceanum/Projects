@@ -21,7 +21,11 @@ The reported accuracy of linear regression is 0.56 if I remove
 the if check in the epochs for loop that takes diff into
 account, I get a better accuracy of 0.6075. I believe this is
 due to the flat array where the prediction does not improve
-between epochs 40 and 50 in fig2. I will be using the best
+between epochs 40 and 50 in fig2. 
+
+![image](https://user-images.githubusercontent.com/61973661/149365752-7d6e4d18-76e9-4f2a-9fe9-0ebd3459a8a3.png)
+
+I will be using the best
 accuracy in reporting because I believe the error is a bug on
 my part and not a function of the Linear regression.
 The regression can be seen in action in fig3 where the green
@@ -29,7 +33,7 @@ line is the initial starting plain and the function is trying to fit
 it best to the data. I have tried different epochs and eta with
 little success. Fig4 is the final and best result plotted
 
-![image](https://user-images.githubusercontent.com/61973661/149365752-7d6e4d18-76e9-4f2a-9fe9-0ebd3459a8a3.png)
+
 ![image](https://user-images.githubusercontent.com/61973661/149365779-f37211e7-9038-49e4-9459-94f9470149e0.png)
 
 
@@ -73,11 +77,12 @@ epochs 17 accuracy 0.6625
 
 Summary
 
-Model accuracy Epochs eta
-LinReg 0.56 1000 0.25
-LogReg 0.6375 651 0.01
-kNN 0.7675 na na
-perceptron 0.6625 17 0.05
+|  Model |  accuracy |  Epochs | eta  |   
+|---|---|---|---|
+| LinReg | 0.56  | 1000  | 0.25  | 
+| LogReg | 0.6375 | 651 | 0.01
+| kNN | 0.7675 | na | na |
+| perceptron | 0.6625 | 17 | 0.05 |
 
 From the results we can observe that the Linier classifier is struggling the most because the data is
 not linearly separable. From fig4 we can see that the line it drew manages to separate the lower
