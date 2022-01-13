@@ -1,7 +1,7 @@
-#Comparing classifiers
+# Comparing classifiers
 
 
-##Datasets
+## Datasets
 
 We start by making a synthetic dataset of 1600 datapoints and three classes, with 800 individuals in one class and 400 in each of the two other classes. 
 
@@ -15,7 +15,7 @@ between X and t, which may be achieved by shuffling the indices. We split into 5
 
 
 
-##Linear regression
+## Linear regression
 
 The reported accuracy of linear regression is 0.56 if I remove
 the if check in the epochs for loop that takes diff into
@@ -38,7 +38,7 @@ little success. Fig4 is the final and best result plotted
 
 
 
-##Logistic regression
+## Logistic regression
 LogReg 0.6375
 I ran multiple for loops testing both the learning rate and epochs. For eta the best setting seems to
 be 0.01. values over this end up decreasing the accuracy as we can see in fig5
@@ -54,7 +54,7 @@ Epochs: 651 Accuracy: 0.6475
 
 
 
-##k-nearest neighbors (kNN)
+## k-nearest neighbors (kNN)
 
 kNN = 0.7675
 running a for loop with different K. K being the number of neighbors to include in the distance
@@ -64,7 +64,7 @@ K: 14 Accuracy: 0.7675
 ![image](https://user-images.githubusercontent.com/61973661/149366017-74486def-8bb7-4f8b-bac6-d29bbf26ba05.png)
 
 
-##Simple perceptron
+## Simple perceptron
 
 Accuracy = 0.6625
 Running the simple perceptron on different epochs I found that the best accuracy occurred with 17
@@ -75,7 +75,7 @@ epochs 17 accuracy 0.6625
 
 
 
-##Summary
+## Summary
 
 |  Model |  accuracy |  Epochs | eta  |   
 |---|---|---|---|
